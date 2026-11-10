@@ -58,7 +58,7 @@ class RemixIconsTest extends TestCase
 
     public function test_it_finds_filaments_alias_classes(): void
     {
-        $this->assertGreaterThan(150, count(self::filamentAliases()));
+        $this->assertGreaterThan(100, count(self::filamentAliases()), 'Filament 4.0 defines 141 aliases');
     }
 
     public function test_every_filament_alias_is_mapped(): void
