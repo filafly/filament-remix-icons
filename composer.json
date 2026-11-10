@@ -1,0 +1,53 @@
+{
+  "name": "filafly/filament-remix-icons",
+  "description": "Remix Icon pack for Filament Icons: replaces every Filament UI icon with Remix Icon, line or fill",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "Laravel",
+    "Filament",
+    "icons",
+    "Remix Icon",
+    "replace",
+    "swap"
+  ],
+  "homepage": "https://filafly.com/plugins/remix-icons?utm_source=packagist&utm_medium=homepage&utm_campaign=remix-icons",
+  "authors": [
+    {
+      "role": "Developer",
+      "name": "Nolan Nordlund",
+      "email": "nolan@filafly.com",
+      "homepage": "https://www.filafly.com/"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "filafly/filament-icons": "^2.2.2",
+    "andreiio/blade-remix-icon": "^3.9",
+    "filament/filament": "^4.0 || ^5.0"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.22",
+    "orchestra/testbench": "^10.0 || ^11.0",
+    "phpunit/phpunit": "^11.5 || ^12.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Filafly\\Icons\\Remix\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Filafly\\Icons\\Remix\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "format": "vendor/bin/pint"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
